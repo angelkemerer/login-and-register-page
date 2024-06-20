@@ -1,0 +1,127 @@
+*{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+:root{
+    --background-color: rgba(40, 47, 53, 0.5);
+    --text-color: white;
+    --secondary-color: #46a2fd;
+
+}
+
+body{
+    background-image: url(../img/fondo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    margin:auto;
+    margin-top: 100px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+/*Caja trasera*/
+.caja_trasera{
+    width: 100%;
+    display: flex;
+    padding: 10px 40px;
+    justify-content: center;
+    background-color: var(--background-color);
+    backdrop-filter: blur(10px)
+}
+
+.caja_trasera div{
+    margin: 100px 50px;
+    color: var(--text-color);
+    transition: all 500ms;
+}
+
+.caja_trasera div p,
+.caja_trasera div button{
+    margin-top: 30px;
+}
+
+.caja_trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja_trasera button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.caja_trasera button:hover{
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+/*Formularios*/
+.contenedor_login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    bottom: 205px;
+    left: 10px;
+
+}
+
+.contenedor_login-register form{
+    width: 100%;
+    padding: 80px 30px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor_login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.contenedor_login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor_login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.formulario_login{
+    display: block;
+}
+
+.formulario_register{
+    display: none;
+}
